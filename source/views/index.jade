@@ -1,0 +1,78 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='shortcut icon', href='img/favicon.ico')
+    link(rel='stylesheet', href='assets/css/vendor/fluidbox.min.css')
+    link(rel='stylesheet', href='assets/css/main.css')
+    title tita goma - Miraida Muñiz
+  body
+    header
+      #logo-container
+        #logo
+          a(href='/') tita goma
+        #subtitle aka. Miraida Muñiz
+     //
+        <nav>
+        <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="mailto:your@address.com" class="bordered">Contact</a></li>
+        </ul>
+        </nav>
+    #content
+      section.intro
+        h1
+          | Hello,
+        p
+          | I'm a graduate architect and artist from Puerto Rico.
+      section.row
+        .col-full
+          h2 About
+          p
+            | Gumba is a fictional agency from Amsterdam, The Netherlands. This is the place where you would normally introduce yourself. You can easily change the template to fit your needs by adding text or changing the colors and styles.
+      section.row
+        .photo-grid
+          a.col-2(href='assets/img/example-photo-b.jpg', rel='lightbox')
+            img(src='assets/img/example-photo-b.jpg', alt='Example photo')
+          a.col-2(href='assets/img/example-photo-c.jpg', rel='lightbox')
+            img(src='assets/img/example-photo-c.jpg', alt='Example photo')
+          a.col-1(href='assets/img/example-photo-a.jpg', rel='lightbox')
+            img(src='assets/img/example-photo-a.jpg', alt='Example photo')
+      section.row
+        .col
+          h2 Let's Connect
+          p
+            | Want to get in touch? Just send me an 
+            a(href='mailto:mirimuniz@titagoma.com') email
+            | .
+        .col
+          h2 Follow me
+          p
+            | I'm on 
+            a(href='http://twitter.com/titagoma') Twitter
+            |  and 
+            a(href='http://instagram.com/mirimuniz') Instagram
+            | .
+      section.row
+        .col-full
+          p
+            | © 2015 - Miraida Rodríguez Muñiz
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+    script.
+      if (!window.jQuery)
+      {
+      document.write('<script src="js/vendor/jquery.1.11.min.js"><\\/script>');
+      }
+    script(src='assets/js/vendor/jquery.fluidbox.min.js')
+    script(src='assets/js/main.js')
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'YOUR_GOOGLE_ANALYTICS_ID', 'auto');
+      ga('send', 'pageview');
